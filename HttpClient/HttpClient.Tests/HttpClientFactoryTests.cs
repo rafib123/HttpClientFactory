@@ -41,7 +41,7 @@ namespace HttpClient.Tests
             var testUri = "http://localhost/api/";
             var factory = new HttpClientFactory();
 
-            var client = factory.GetHttpClient(testUri);
+            var client = factory.GetHttpClient(testUri); ;
 
             Assert.AreEqual(client.BaseAddress, new Uri(testUri));
         }
